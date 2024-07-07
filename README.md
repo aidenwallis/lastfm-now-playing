@@ -10,7 +10,7 @@ A [last.fm](https://last.fm) equivalent to my existing [Spotify Now Playing](htt
 
 - This widget does not require any form of authentication, as it uses the public Last.FM API.
 
-## Getting started
+## Getting started
 
 1. Visit [lastfm.aiden.tv](https://lastfm.aiden.tv).
 

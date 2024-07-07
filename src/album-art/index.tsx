@@ -1,4 +1,4 @@
-import { animated, useTransition } from "react-spring";
+import { animated, useTransition } from "@react-spring/web";
 import "./index.css";
 import { FC } from "react";
 

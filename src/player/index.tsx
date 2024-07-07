@@ -1,5 +1,4 @@
-import { useChain, useSpring, useSpringRef, useTransition } from "react-spring";
-import { animated } from "@react-spring/web";
+import { animated, useChain, useSpring, useSpringRef, useTransition } from "@react-spring/web";
 import "./index.css";
 import { AlbumArt } from "../album-art";
 import { useEffect, useState } from "react";

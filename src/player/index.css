@@ -1,0 +1,55 @@
+.core-container {
+  width: 35rem;
+  height: 7rem;
+  overflow: hidden;
+}
+
+.player-shell {
+  background-color: var(--player-background-color);
+  display: block;
+  margin: 0 auto;
+  width: 7rem;
+  overflow: hidden;
+  height: 7rem;
+  transform: translateY(70px);
+  will-change: transform, width;
+}
+
+.player-content {
+  display: flex;
+  position: relative;
+  width: 35rem;
+  height: 7rem;
+}
+
+.song-meta {
+  padding-left: 1rem;
+  height: 100%;
+  position: absolute;
+  left: 7rem;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.song-meta-content {
+  overflow: hidden;
+}
+
+.song-artist-container {
+  min-height: 2rem;
+}
+
+.song-artist {
+  font-weight: 600;
+  color: var(--artist-text-color);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.song-title {
+  color: var(--song-text-color);
+  font-size: 2.4rem;
+  font-weight: 700;
+}

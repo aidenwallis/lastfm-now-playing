@@ -1,0 +1,179 @@
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: #1b1d20;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.center {
+  max-width: 34rem;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.instructions {
+  max-width: 75rem;
+}
+
+.content {
+  background: #303338;
+  border-radius: 5px;
+  padding: 1.4rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  font-family: 600;
+  appearance: none;
+  display: block;
+  border-radius: 5px;
+  background: #1b1d20;
+  color: #fff;
+  border: 1px solid #303338;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.6rem;
+}
+
+.button {
+  font-weight: 700;
+  appearance: none;
+  background: #3e98f7;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.submit {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+.formIntro {
+  color: #eee;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  padding-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.introSubtext {
+  color: #aaa;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.content a {
+  color: #3e98f7;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.formRow {
+  padding-bottom: 1rem;
+}
+
+.introText {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #3e98f7;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #aaa;
+  padding-top: 1.4rem;
+}
+
+.urlContainer {
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.urlText {
+  background: #1b1d20;
+  padding: 1rem;
+  flex: 1;
+  min-width: 0;
+  color: #aaa;
+  font-size: 2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.stepByStep ol {
+  padding-left: 2rem;
+}
+
+.stepByStep li {
+  color: #aaa;
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.stepByStep p {
+  color: #eee;
+  padding-bottom: 1rem;
+}
+
+.stepByStep code {
+  background-color: #1b1d20;
+  border-radius: 4px;
+  padding: 0.4rem;
+}
+
+.divider {
+  padding: 2rem 0;
+}
+
+.divider:before {
+  height: 1px;
+  width: 100%;
+  content: "";
+  background-color: #aaa;
+  display: block;
+}
+
+a.back {
+  font-size: 1.4rem;
+  color: #aaa;
+  text-decoration: none !important;
+  padding-bottom: 2rem;
+  display: block;
+}
+
+a.back:hover {
+  color: #eee;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}

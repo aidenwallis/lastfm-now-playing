@@ -1,0 +1,42 @@
+.scrollable-text {
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollable-text--scrolling:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    var(--player-background-color) 0%,
+    transparent 10%,
+    transparent 80%,
+    var(--player-background-color) 95%
+  );
+}
+
+.scrollable-text-inner {
+  position: relative;
+}
+
+.scrollable-text-inner--scrolling {
+  animation: scroll 15s linear infinite;
+}
+
+.scrollable-text-content {
+  white-space: nowrap;
+  padding-right: 5rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(var(--text-width) * -1));
+  }
+}

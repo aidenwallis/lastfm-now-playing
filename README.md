@@ -22,10 +22,10 @@ A [last.fm](https://last.fm) equivalent to my existing [Spotify Now Playing](htt
 
 1. Clone the repository.
 
-1. Run `yarn` to install dependencies.
+1. Run `npm i` to install dependencies.
 
-1. Copy `.env.example`, and add a [Last.FM API key](https://last.fm/api/accounts).
+1. Copy `.env.example` to `.env`, and add a [Last.FM API key](https://last.fm/api/accounts).
 
-1. Run `yarn dev` to run the widget locally.
+1. Run `npm run dev` to run the widget locally.
 
-1. Run `yarn build` to build the widget.
+1. Run `npm run build` to build the widget.

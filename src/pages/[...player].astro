@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { PlayerRoot } from '../app/player-root';
+
+export function getStaticPaths() {
+	return [{params: {player: '*'}}];
+};
+
+---
+
+<Layout title="Welcome to Astro.">
+	<PlayerRoot client:only="react" />
+</Layout>
+
+<style is:global>
+:root {
+  --artist-text-color: #25cba3;
+  --song-text-color: #fff;
+  --player-background-color: #1b1d20;
+}
+</style>

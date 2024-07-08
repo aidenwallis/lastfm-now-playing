@@ -11,7 +11,7 @@ export const SongProvider: FC<{ children: ReactNode; username: string }> = ({ ch
   );
 
   // song service will dedupe these calls
-  songService.setUserId(username || "aidenwallis");
+  songService.setUserId(username);
 
   return <SongContext.Provider value={{ currentTrack }}>{children}</SongContext.Provider>;
 };

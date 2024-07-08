@@ -1,4 +1,4 @@
-import { FC, ReactNode, useSyncExternalStore } from "react";
+import { type FC, type ReactNode, useSyncExternalStore } from "react";
 import { createSongService, SongContext } from "./service";
 
 const songService = createSongService();
@@ -11,7 +11,7 @@ export const SongProvider: FC<{ children: ReactNode; username: string }> = ({ ch
   );
 
   // song service will dedupe these calls
-  songService.setUserId(username);
+  songService.setUserId(username || "aidenwallis");
 
   return <SongContext.Provider value={{ currentTrack }}>{children}</SongContext.Provider>;
 };

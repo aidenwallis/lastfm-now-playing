@@ -1,6 +1,6 @@
 import { animated, useTransition } from "@react-spring/web";
 import "./index.css";
-import { FC } from "react";
+import type { FC } from "react";
 
 export const AlbumArt: FC<{ albumURL?: string }> = ({ albumURL }) => {
   const transitions = useTransition(albumURL || "", {

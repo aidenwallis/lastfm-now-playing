@@ -1,9 +1,9 @@
 import { animated, useChain, useSpring, useSpringRef, useTransition } from "@react-spring/web";
 import "./index.css";
 import { AlbumArt } from "../album-art";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type FC } from "react";
 import { ScrollableText } from "../scrollable-text";
-import { CurrentTrack, useCurrentTrack } from "../song/service";
+import { type CurrentTrack, useCurrentTrack } from "../song/service";
 
 const FULL_WIDTH = 350;
 
@@ -46,7 +46,7 @@ function useAnimations(currentTrack: CurrentTrack | null) {
   return { upper, stretch, artist, name };
 }
 
-const PlayerRenderer: React.FC<{ currentTrack: CurrentTrack | null }> = ({ currentTrack }) => {
+const PlayerRenderer: FC<{ currentTrack: CurrentTrack | null }> = ({ currentTrack }) => {
   const { stretch, upper, artist, name } = useAnimations(currentTrack);
 
   return (
@@ -78,7 +78,7 @@ const PlayerRenderer: React.FC<{ currentTrack: CurrentTrack | null }> = ({ curre
   );
 };
 
-export const Player: React.FC = () => {
+export const Player: FC = () => {
   const currentTrack = useCurrentTrack();
   const open = !!currentTrack;
   const [hasTrackOnce, setHasTrackOnce] = useState(false);

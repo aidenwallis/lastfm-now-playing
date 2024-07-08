@@ -87,8 +87,8 @@ export function Welcome() {
           <ol>
             <li>
               <p>Open OBS, click the "+" in the Sources panel:</p>
-              <a href={step1} target="_blank" rel="noopener noreferrer">
-                <img src={step1} alt="Example of opening OBS' sources panel, and selecting Browser." />
+              <a href={step1.src} target="_blank" rel="noopener noreferrer">
+                <img src={step1.src} alt="Example of opening OBS' sources panel, and selecting Browser." />
               </a>
             </li>
             <li>
@@ -96,8 +96,8 @@ export function Welcome() {
                 Set your <code>URL</code>, width to <code>350</code>, and height to <code>70</code>. Click{" "}
                 <code>OK</code>:
               </p>
-              <a href={step2} target="_blank" rel="noopener noreferrer">
-                <img src={step2} height={180} alt="Example of correct browser source confgiuration" />
+              <a href={step2.src} target="_blank" rel="noopener noreferrer">
+                <img src={step2.src} height={180} alt="Example of correct browser source confgiuration" />
               </a>
             </li>
             <li>

@@ -1,0 +1,39 @@
+---
+import "./reset.css";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Widget to display the song currently playing on your Last.fm profile" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+		<title>Last.fm Now Playing</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	* {
+		-webkit-font-smoothing: antialiased;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		font-size: 62.5%;
+	}
+
+	:root {
+		--font-family: "Inter", sans-serif;
+	}
+
+	body {
+		font-family: var(--font-family);
+	}
+</style>

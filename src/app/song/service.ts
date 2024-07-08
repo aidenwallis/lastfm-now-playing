@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
 
-const LASTFM_API_KEY = import.meta.env.VITE_LASTFM_API_KEY;
+const LASTFM_API_KEY = import.meta.env.PUBLIC_LASTFM_API_KEY;
 const POLLING_RATE = 3000;
 
 interface APILastfmText {

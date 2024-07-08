@@ -1,4 +1,4 @@
-import { CSSProperties, useLayoutEffect, useRef, useState } from "react";
+import { type CSSProperties, useLayoutEffect, useRef, useState } from "react";
 import "./index.css";
 
 export const ScrollableText: React.FC<{ text: string }> = ({ text }) => {

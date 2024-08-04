@@ -1,6 +1,7 @@
 .scrollable-text {
   overflow: hidden;
   position: relative;
+  white-space: nowrap;
 }
 
 .scrollable-text--scrolling:after {
